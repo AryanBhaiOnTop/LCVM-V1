@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# hvm.py - HVM Panel - Full Web-Based LXC Container VPS Management System
-# Version: 5.0-PRO-ULTIMATE - FIXED
+# hvm.py - LCVM Panel - Full Web-Based LXC Container VPS Management System
+# Version: 1.0-ULTIMATE - FIXED
 
 import os
 import sys
@@ -87,9 +87,9 @@ except ImportError:
     logging.warning("PIL not installed - image optimization disabled")
 
 # Environment variables
-PANEL_NAME = os.getenv('PANEL_NAME', 'HVM PANEL')
-PANEL_VERSION = os.getenv('PANEL_VERSION', '5.1-PRO-ULTIMATE')
-PANEL_DEVELOPER = os.getenv('PANEL_DEVELOPER', 'Hopingboz')
+PANEL_NAME = os.getenv('PANEL_NAME', 'LCVM PANEL')
+PANEL_VERSION = os.getenv('PANEL_VERSION', '1.0-PRO-ULTIMATE')
+PANEL_DEVELOPER = os.getenv('PANEL_DEVELOPER', 'devaru')
 SECRET_KEY = os.getenv('SECRET_KEY', secrets.token_urlsafe(32))
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'hvm.db')
 HOST = os.getenv('HOST', '0.0.0.0')
